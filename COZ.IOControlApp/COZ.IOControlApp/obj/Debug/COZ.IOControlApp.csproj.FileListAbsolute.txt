@@ -1,0 +1,17 @@
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\bin\Debug\COZ.IOControlApp.exe.config
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\bin\Debug\COZ.IOControlApp.exe
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\bin\Debug\COZ.IOControlApp.pdb
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\obj\Debug\COZ.IOControlApp.csproj.AssemblyReference.cache
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\obj\Debug\MainWindow.g.cs
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\obj\Debug\View\MainApp.g.cs
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\obj\Debug\App.g.cs
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\obj\Debug\COZ.IOControlApp_MarkupCompile.cache
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\obj\Debug\COZ.IOControlApp_MarkupCompile.lref
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\obj\Debug\MainWindow.baml
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\obj\Debug\View\MainApp.baml
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\obj\Debug\COZ.IOControlApp.g.resources
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\obj\Debug\COZ.IOControlApp.Properties.Resources.resources
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\obj\Debug\COZ.IOControlApp.csproj.GenerateResource.cache
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\obj\Debug\COZ.IOControlApp.csproj.CoreCompileInputs.cache
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\obj\Debug\COZ.IOControlApp.exe
+D:\__Local_work\__Project Source\Coz\IOTestControlModule\COZ.IOControlApp\COZ.IOControlApp\obj\Debug\COZ.IOControlApp.pdb
