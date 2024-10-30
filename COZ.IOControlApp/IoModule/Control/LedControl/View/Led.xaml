@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="IoModule.Control.LedControl.View.Led"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IoModule.Control.LedControl.View"
+             xmlns:control="clr-namespace:IoModule.Control.LedControl"
+             xmlns:vm="clr-namespace:IoModule.Control.LedControl.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="33.483" d:DesignWidth="34.669">
+
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="ResourceDictionary.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <UserControl.DataContext>
+        <vm:LedControlViewModel/>
+    </UserControl.DataContext>
+    <Grid>
+        <control:LedControl 
+             Style="{StaticResource CircularLight}"
+             State="{Binding CheckIo, Mode=TwoWay}" 
+             ColorList="{StaticResource ColorArray}" 
+             VerticalAlignment="Center"
+             Height="30" HorizontalAlignment="Center" Width="39" 
+            />
+    </Grid>
+</UserControl>

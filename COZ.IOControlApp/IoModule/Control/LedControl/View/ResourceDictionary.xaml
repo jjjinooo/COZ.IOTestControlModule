@@ -1,0 +1,72 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:rc="clr-namespace:IoModule.Control.LedControl">
+
+    <x:Array x:Key="ColorArray" Type="{x:Type SolidColorBrush}">
+        <SolidColorBrush Color="LightGray"/>
+        <SolidColorBrush Color="Lime"/>
+        <SolidColorBrush Color="Green"/>
+        <SolidColorBrush Color="Blue"/>
+        <SolidColorBrush Color="Red"/>
+    </x:Array>
+
+    <Style x:Key="CircularLight" TargetType="rc:LedControl">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="rc:LedControl">
+                    <Grid Background="Transparent" Name="grd"
+			  Width="{TemplateBinding Width}"
+			  Height="{TemplateBinding Height}"
+			  >
+                        <Grid.Resources>
+                            <Style TargetType="{x:Type Ellipse}">
+                                <Setter Property="Stretch" Value="Uniform"/>
+                                <Setter Property="HorizontalAlignment" Value="{Binding RelativeSource={RelativeSource AncestorType=Control}, Path=HorizontalContentAlignment}"/>
+                                <Setter Property="VerticalAlignment"  Value="{Binding RelativeSource={RelativeSource AncestorType=Control}, Path=VerticalContentAlignment}"/>
+                            </Style>
+                        </Grid.Resources>
+                        <Ellipse x:Name="LedBorder"
+					 Fill="{TemplateBinding CurrentLight}"
+					 Width="{TemplateBinding LightRadius}"
+					 Height="{TemplateBinding LightRadius}"
+					 Stroke="{Binding RelativeSource={RelativeSource AncestorType=Control}, Path=BorderBrush}"
+					 StrokeThickness="{TemplateBinding CircularThickness}"
+					 />
+                        <Ellipse Width="{TemplateBinding LightRadius}"
+					 Height="{TemplateBinding LightRadius}"
+					 >
+                            <Ellipse.Fill>
+                                <RadialGradientBrush Center="0 0" RadiusX="1.2" RadiusY="1.2">
+                                    <GradientStop Color="Transparent" Offset="0"/>
+                                    <GradientStop Color="#AA000000" Offset="1.2"/>
+                                </RadialGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse x:Name="CenterGlow" Stretch="Uniform"
+					 Width="{TemplateBinding LightRadius}"
+					 Height="{TemplateBinding LightRadius}"
+					 >
+                            <Ellipse.Fill>
+                                <RadialGradientBrush RadiusX="0.4" RadiusY="0.4">
+                                    <GradientStop Color="White" Offset="0"/>
+                                    <GradientStop Color="Transparent" Offset="1"/>
+                                </RadialGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <Ellipse x:Name="CornerLight"
+					 Width="{TemplateBinding LightRadius}"
+					 Height="{TemplateBinding LightRadius}"
+					 >
+                            <Ellipse.Fill>
+                                <RadialGradientBrush Center="0.3 0.3" RadiusX="0.3" RadiusY="0.3">
+                                    <GradientStop Color="White" Offset="0"/>
+                                    <GradientStop Color="Transparent" Offset="1"/>
+                                </RadialGradientBrush>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

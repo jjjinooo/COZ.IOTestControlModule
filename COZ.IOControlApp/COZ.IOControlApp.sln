@@ -5,6 +5,8 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "COZ.IOControlApp", "COZ.IOControlApp\COZ.IOControlApp.csproj", "{F9055EAC-FB33-4F74-8172-82284A2813DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoModule", "IoModule\IoModule.csproj", "{886C6C7F-60F3-4EC9-860A-DF922F37AFC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{F9055EAC-FB33-4F74-8172-82284A2813DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9055EAC-FB33-4F74-8172-82284A2813DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9055EAC-FB33-4F74-8172-82284A2813DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886C6C7F-60F3-4EC9-860A-DF922F37AFC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886C6C7F-60F3-4EC9-860A-DF922F37AFC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886C6C7F-60F3-4EC9-860A-DF922F37AFC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886C6C7F-60F3-4EC9-860A-DF922F37AFC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

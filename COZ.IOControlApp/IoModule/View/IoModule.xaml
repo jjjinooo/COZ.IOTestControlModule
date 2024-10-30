@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="IoModule.View.IoMoudle"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IoModule.View"
+             xmlns:tab="clr-namespace:IoModule.Control.TabControl.View"
+             mc:Ignorable="d" 
+             xmlns:vm ="clr-namespace:IoModule.ViewModel"
+             d:DesignHeight="48.937" d:DesignWidth="384.955">
+    <UserControl.DataContext>
+        <vm:IoModuleViewModel/>
+    </UserControl.DataContext>
+    <Grid>
+        <Border BorderBrush="DarkGray" BorderThickness="0.5" Margin="14,7,0,0" HorizontalAlignment="Left" Width="53" Height="34" VerticalAlignment="Top">
+            <TextBlock Text="{Binding IoNumber, ElementName=UC}" Margin="7" FontSize="15" HorizontalAlignment="Center" Foreground="DarkGray" />
+        </Border>
+        <Border BorderBrush="DarkGray" BorderThickness="0.5" Margin="70,7,0,0" HorizontalAlignment="Left" Width="254" Height="34" VerticalAlignment="Top">
+            <TextBlock Text="{Binding IoName, ElementName=UC}" FontSize="15" Foreground="DarkGray" />
+        </Border>
+        <Viewbox Margin="325,11,0,0" Height="26" VerticalAlignment="Top" HorizontalAlignment="Left" Width="47">
+            <tab:Tab DataContext="{Binding TabControl}" />
+        </Viewbox>
+    </Grid>
+</UserControl>
